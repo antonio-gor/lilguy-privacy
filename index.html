@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>lil guy — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 640px; margin: 0 auto; padding: 32px 20px 64px;
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #1B2A1C; background: #F6FAF4;
+  }
+  h1 { font-size: 26px; margin-bottom: 4px; }
+  h2 { font-size: 18px; margin-top: 28px; }
+  p, li { color: #3C4F3D; }
+  .updated { color: #8AA08B; font-size: 13px; }
+  a { color: #2E7D46; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #E9F2E8; background: #0B120B; }
+    p, li { color: #BCCDBB; }
+    a { color: #7FD69A; }
+  }
+</style>
+</head>
+<body>
+<h1>lil guy — Privacy Policy</h1>
+<p class="updated">Last updated: July 13, 2026</p>
+
+<p>lil guy is a desktop pet for macOS. He walks around your screen, sits on
+your windows, and occasionally does a little dance.
+<strong>The developer collects nothing.</strong></p>
+
+<h2>What the app stores</h2>
+<p>Your settings — chosen character, size, sound preference, and any sprite
+packs you import — are stored on your Mac, inside the app's own sandboxed
+container. That's the entire list. There are no accounts, no analytics, no
+identifiers, and no tracking of any kind.</p>
+
+<h2>Network use</h2>
+<p>None. lil guy has no network access at all — the app cannot send or
+receive anything, by construction.</p>
+
+<h2>Permissions</h2>
+<p>lil guy requests no system permissions: no Accessibility access, no
+Screen Recording, no Input Monitoring, no keyboard observation. To know
+where to sit, he reads only the <em>positions</em> of windows on screen
+(their frames and owning app names) through a standard public macOS API —
+never window titles or contents. Idle detection uses the system's passive
+"seconds since last input" counter, which observes no actual input.</p>
+
+<h2>Sprite packs</h2>
+<p>Sprite packs you import are copied into the app's local container and
+never leave your Mac. Packs you export are written only to the folder you
+choose.</p>
+
+<h2>Uninstalling</h2>
+<p>Deleting the app plus its container
+(<code>~/Library/Containers/com.lilguy.desktop</code>) removes everything.</p>
+
+<h2>Contact</h2>
+<p>Questions? Open an issue on
+<a href="https://github.com/antonio-gor/lilguy-privacy/issues">GitHub</a>.</p>
+</body>
+</html>
